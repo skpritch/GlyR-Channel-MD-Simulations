@@ -12,23 +12,17 @@ Potential of mean force (PMF) calculations reveal substantially higher free ener
 
 These findings demonstrate both the utility and limitations of computational approaches in understanding ion channel selectivity mechanisms.
 
-## Keywords
-
-- Ion Channel  
-- Glycine Receptors (GlyR)  
-- Ion Pore Domain  
-- Molecular Dynamics  
-- CHARMM-GUI  
-- Positional Restraint  
-- CHARMM36m  
-- NBFIX  
-- Potential of Mean Force (PMF)  
-- Umbrella Sampling  
-- Free Energy  
-- Hydration Shell
-
-## PMFs
-
-
+## PMFs:
+- **generate_starting_configurations_PMF.py**: takes a .gro and .xtc file as inputs and generates .gro files for each z-axis ion starting position
+- **write_index.sh**: For a given starting CONFIG directory generates the requisite index files
+- **write_mdp.pl**: Generates the necessary .mdp files for each run (need to alter the harmonic positional restraint z-axis coordinate for each coordinate)
+- **script_wham.sh**: Runs a WHAM analysis from GROMACS across various time-length windows to prepare files for convergence analysis
+- **PMF_analysis.py**: Accepts a PROD and WHAM directory and outputs PMF profile graphs
+- **hydration_shell.py**: Accepts a PROD directory and calculates interaction numbers for each time window
+- **check_system_orientation.py**: evaluates the results of production runs and checks ion position against key pore residue positions
 
 ## Conductance Practice
+- 
+
+## Figures
+- Contains the figures used in the report
