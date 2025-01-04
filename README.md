@@ -22,7 +22,11 @@ These findings demonstrate both the utility and limitations of computational app
 - **check_system_orientation.py**: evaluates the results of production runs and checks ion position against key pore residue positions
 
 ## Conductance Practice
-- 
+- **6pm2**: contains the forcefield, mdp, topology, and .gro files for the 6pm2 pore
+- **Daemgen**: contains the forcefield, mdp, topology, and .gro files for the Daemgen pore
+- **cond_practice.py**: calculates the conductance given a .gro and .xtc
+- **current_vs_voltage.py**: given a spread of applied voltages calculates the respective currents and plots them
+- **transits_vs_membound.py**: given the outputs of a production run plots the conductance estimates for different assigned channel z-axis boundaries
 
 ## Figures
 - Contains the figures used in the report
